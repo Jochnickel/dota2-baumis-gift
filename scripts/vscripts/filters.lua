@@ -68,7 +68,6 @@ function GameMode:ExecuteOrderFilter(event)
 
 	-- your stuff
 	if (31==orderType) then
-		unit:AddItemByName("item_smoke_of_deceit")
 		local dummy_unit = CreateUnitByName("npc_dota_companion", pos, false, nil, nil, unit:GetTeam())
 		dummy_unit:AddNewModifier(dummy_unit, nil, "modifier_truesight_aura", {})
 		dummy_unit:AddNewModifier(dummy_unit, nil, "modifier_tutorial_hide_npc", {})
